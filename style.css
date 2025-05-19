@@ -125,7 +125,7 @@ nav {
 
 /* Hero Section */
 .hero {
-    background-color: var(--dark-bg);
+    /* background-color: var(--dark-bg); */
     color: var(--text-light);
     position: relative;
     overflow: hidden;
@@ -206,13 +206,15 @@ nav {
 }
 
 .manifesto-cards {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* gap: 30px; */
+    height: 500px;
+    position: relative;
+    /* background-color: #c0392b; */
 }
 
-.manifesto-card {
-    /* background-color: rgba(255, 255, 255, 0.1); */
+.manifesto-card-old {
     background-color: var(--light-bg);
     padding: 30px;
     border-radius: 10px;
@@ -220,18 +222,57 @@ nav {
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
+.manifesto-card {
+    position: absolute;
+    width: 280px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    cursor: move;
+    user-select: none;
+    transition: transform 0.1s, box-shadow 0.3s;
+    z-index: 1;
+}
+
 .manifesto-card:hover {
-    /* background-color: rgba(255, 255, 255, 0.15); */
-    /* background-color: var(--); */
-    transform: translateY(-5px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.18);
+}
+
+.manifesto-card.drag-active {
+    z-index: 10;
+    transform: scale(1.02);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+    background-color: var(--light-bg);
 }
 
 .manifesto-card h3 {
     margin-bottom: 20px;
-    color: var(--accent-color);
+    color: var(--text-dark);
 }
 .manifesto-card p {
     color: var(--text-dark)
+}
+
+.manifesto-card:nth-child(1) {
+    top: 60px;
+    left: 10%;
+    background-color: #ffefd5;
+    transform: rotate(-2deg);
+}
+
+.manifesto-card:nth-child(2) {
+    top: 180px;
+    left: 38%;
+    background-color: #e6f7ff;
+    transform: rotate(1deg);
+}
+
+.manifesto-card:nth-child(3) {
+    top: 100px;
+    left: 65%;
+    background-color: #f0fff0;
+    transform: rotate(3deg);
 }
 
 /* Projects Section */
@@ -566,4 +607,13 @@ footer {
   margin-top: 4px;
   font-size: 0.9rem;
   color: var(--text-dark);
+}
+
+#bg-canvas {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: -1;
+  background-color: var(--dark-bg);
+  pointer-events: auto;
 }

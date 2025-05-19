@@ -24,6 +24,7 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
+        <canvas id="bg-canvas"></canvas>
         <div class="hero-content">
             <h1>Oliver Skarupa</h1>
             <h2>INTERACTIVE EXPERIENCE DESIGNER</h2>
@@ -65,16 +66,16 @@
                 <h2>Manifesto for engaging interactive experiences</h2>
                 <p>Design goals I aim towards</p>
             </div>
-            <div class="manifesto-cards">
-                <div class="manifesto-card">
+            <div class="manifesto-cards" id="playground">
+                <div class="manifesto-card" id="card1">
                     <h3>01. CREATIVITY AS A CORE FEATURE</h3>
                     <p>Great experiences allow experimentation, building and creative expression. When creating is a part of the gameplay, players become collaborators, not just participants.</p>
                 </div>
-                <div class="manifesto-card">
+                <div class="manifesto-card" id="card2">
                     <h3>02. FUN BEFORE LEARNING</h3>
                     <p>A memorable experience is always playful, even if it has a serious purpose. I want to create games where players learn because of their curiosity, not because they should.</p>
                 </div>
-                <div class="manifesto-card">
+                <div class="manifesto-card" id="card3">
                     <h3>03. DESIGN FOR HUMAN CONNECTION</h3>
                     <p>It could be cooperative, competitive or social. Well designed experiences bring people together.</p>
                 </div>
@@ -322,5 +323,7 @@
             }
         });
     </script>
+    <script src="balls.js"></script>
+    <script src="blocks.js"></script>
 </body>
 </html>
