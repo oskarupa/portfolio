@@ -11,13 +11,14 @@
 <body>
     <!-- Navigation -->
     <nav>
-        <div class="logo">Oliver Skarupa</div>
+        <!-- <div class="logo">Oliver Skarupa</div> -->
+        <img src="images/title.png" alt="Oliver Skarupa" class="logo" />
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#manifesto">Manifesto</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="/piv.html">Competence Development</a></li>
         </ul>
     </nav>
 
@@ -52,7 +53,7 @@
                 </div>
             </div>
             <div class="about-image">
-                <img src="/api/placeholder/500/400" alt="Oliver Skarupa">
+                <img src="/images/me.png" alt="Oliver Skarupa">
             </div>
         </div>
     </section>
@@ -83,7 +84,7 @@
 
     <!-- Projects Section -->
     <section class="projects" id="projects">
-        <h2>Projects</h2>
+        <h2 style="margin-bottom: 40px;">Projects</h2>
         <div class="project-container">
             <!-- Roblox - Taxi Boss -->
             <div class="project">
@@ -97,28 +98,49 @@
                     <p>Taxi Boss is a top charting driving/roleplaying/management game with a custom-built open world city, where players deliver increasingly demanding customers and slowly build their own taxi empire.</p>
                     <p>I started developing the game with my brother, as we grew we expanded our team and now have a team working on 3D models, community management and testing.</p>
                     <p>We collaborated with Jimmy Fallon to promote his 2024 Holiday album on Roblox, through Taxi Boss exclusively. This experience has taught me the challenges of working with big brands and companies.</p>
+
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <div class="metric-number">400M+</div>
+                            <div class="metric-label">Visits</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-number">5M+</div>
+                            <div class="metric-label">Monthly Active Users</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-number">30K+</div>
+                            <div class="metric-label">Discord Members</div>
+                        </div>
+                    </div>
+
+                    <a href="https://www.roblox.com/games/7305309231/Taxi-Boss" target="_blank" class="btn" >Play Taxi Boss</a>
                 </div>
                 <div class="project-image">
-                    <img src="/api/placeholder/600/400" alt="Taxi Boss Game">
+                    <img src="/images/taxi-boss.png" alt="Taxi Boss Game">
                 </div>
             </div>
 
             <!-- Brand Identity & UI Design -->
-            <div class="project project-reverse">
+            <div class="project project">
                 <div class="project-content">
                     <div class="project-tags">
                         <div class="project-tag">UI/UX</div>
-                        <div class="project-tag">Brand Identity</div>
-                        <div class="project-tag">Game Design</div>
+                        <div class="project-tag">Brand Design</div>
+                        <div class="project-tag">Social Media</div>
                     </div>
-                    <h3>Brand Identity & User Interface Design</h3>
+                    <h3>Taxi Boss Brand Identity</h3>
                     <p>Over the many years of Taxi Boss being updated and active, I developed a strong visual style that links branding, game art and user interface elements. I believe a visual style can greatly affect the experience of playing a game.</p>
                     <p>I designed the entirety of the Taxi Boss User Interface ranging from menus to widgets. I believe designing game interfaces is an interesting challenge due to the cross-platform nature of Roblox games. I designed elements that would work on mobile, desktop, and console.</p>
                 </div>
                 <div class="project-image">
+                    <img src="/images/tb-brand.png" alt="Taxi Boss Game">
+                </div>
+
+                <!-- <div class="project-image">
                     <div class="game-ui">
                         <div class="game-ui-item">
-                            <img src="/api/placeholder/300/200" alt="Game Thumbnails">
+                            <img src="/images/tb-thumbnails.png" alt="Game Thumbnails">
                         </div>
                         <div class="game-ui-item">
                             <img src="/api/placeholder/300/200" alt="Game Icons">
@@ -130,11 +152,11 @@
                             <img src="/api/placeholder/300/200" alt="Logo Branding">
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
 
             <!-- M.A.R.F.I.N -->
-            <div class="project">
+            <div class="project project-reverse">
                 <div class="project-content">
                     <div class="project-tags">
                         <div class="project-tag">AR/VR</div>
@@ -142,23 +164,17 @@
                         <div class="project-tag">UI/UX</div>
                     </div>
                     <h3>M.A.R.F.I.N</h3>
-                    <p>As part of the Games and Play squad, we designed an AR application for DAF Motors that helps with training mechanics fixing complicated machines in the engine factory.</p>
-                    <p>This project was an incredible learning experience in working with AR and high-tec devices as the Hololens 2.</p>
-                    <div class="skills">
-                        <div class="skill">Ideation</div>
-                        <div class="skill">Programming</div>
-                        <div class="skill">3D Modeling</div>
-                        <div class="skill">AR/VR Development</div>
-                        <div class="skill">UI/UX Design</div>
-                    </div>
+                    <b>AR APPLICATION FOR MICROSOFT HOLOLENS 2</b>
+                    <p>As part of the Games and Play squad, we designed and developer an AR application for DAF Motors that helps with training mechanics fixing complicated machines in the engine factory.</p>
+                    <p>This project was an incredible learning experience in working with AR and high-tech devices as the Hololens 2.</p>
                 </div>
                 <div class="project-image">
-                    <img src="/api/placeholder/600/400" alt="M.A.R.F.I.N AR Application">
+                    <img src="/images/marfin.png" alt="M.A.R.F.I.N AR Application">
                 </div>
             </div>
 
             <!-- Memory Box -->
-            <div class="project project-reverse">
+            <div class="project">
                 <div class="project-content">
                     <div class="project-tags">
                         <div class="project-tag">Physical Computing</div>
@@ -171,30 +187,51 @@
                     <p>During user testing, we found that creating a visual while telling a story makes it easier to understand and to tell.</p>
                 </div>
                 <div class="project-image">
-                    <img src="/api/placeholder/600/400" alt="Memory Box">
+                    <img src="/images/memory-box.png" alt="Memory Box">
                 </div>
             </div>
 
-            <!-- SNEK Game -->
+            <!-- Memory Box: UI -->
             <div class="project">
                 <div class="project-content">
                     <div class="project-tags">
-                        <div class="project-tag">Creative Coding</div>
-                        <div class="project-tag">Game Development</div>
-                        <div class="project-tag">Processing</div>
+                        <div class="project-tag">UI/UX</div>
+                        <div class="project-tag">Graphic Design</div>
+                        <div class="project-tag">Brand Design</div>
                     </div>
-                    <h3>SNEK Game</h3>
-                    <p>Snek Game is a simple but challenging game created using Processing. The goal of the game is to navigate a snake character through increasingly difficult levels with varying obstacles.</p>
-                    <p>The game allows multiple players to play on the same device for an added level of difficulty and competition. There can be a maximum of three snakes – where one is controlled by the WASD keys, one is controlled by the arrow keys, and one is controlled by a Joystick connected to an Arduino.</p>
-                    <p>I believe games should provide the player with tools to create their own challenges and share them with others. To accompany SNEK game, and to help me design levels, I created a level editor which saves levels as files that can be imported and used in the game.</p>
+                    <h3>Memory Box: Digital UI</h3>
+                    <p>One of my main tasks for this design project was to creating a brand and visual identity for our product.</p>
+                    <p>Along with designing the user interface of the digital platform, i designed the logo, icons and all UI elements.</p>
+                    <p>To put everything together, I created an interactive prototype in Sketch to allow people to experience the website during Demo Day.</p>
+                    <p>The logo represents the family tree. It acts as a reference to the structured representation of the family hierarchy and has a visual resemblance to the user interface.</p>
                 </div>
                 <div class="project-image">
-                    <img src="/api/placeholder/600/400" alt="SNEK Game">
+                    <img src="/images/memory-box-ui.png" alt="Memory Box UI">
                 </div>
             </div>
 
-            <!-- Pointless -->
+            <!-- Ordinary Hero -->
             <div class="project project-reverse">
+                <div class="project-content">
+                    <div class="project-tags">
+                        <div class="project-tag">UI/UX</div>
+                        <div class="project-tag">Graphic Design</div>
+                        <div class="project-tag">Brand Design</div>
+                    </div>
+                    <h3>Ordinary Hero</h3>
+                    <b>SERIOUS GAME PROMOTING COMPUTER SCIENCE AT TU/E</b>
+                    <p>During this project we used storytelling and a combination of 3D and 2D graphics to promote TU/e.</p>
+                    <p>It was an important learning experience of designing persuasive games that are both fun and educational.</p>
+                    <p>I worked on both 3D modelling, programming and design of the unique terminal user interface</p>
+                </div>
+                <div class="project-image">
+                    <img src="/images/ordinary-hero.png" alt="Ordinary Hero">
+                </div>
+            </div>
+
+
+            <!-- Pointless -->
+            <div class="project">
                 <div class="project-content">
                     <div class="project-tags">
                         <div class="project-tag">Interactive Design</div>
@@ -207,54 +244,81 @@
                     <p>Pointless reacts to the proximity of the human hand and uses an array of servos to individually control triangular faces. My coding and creative electronics abilities greatly influenced the outcome of the prototype. I believe the final result is a great example of a strong interactive experience.</p>
                 </div>
                 <div class="project-image">
-                    <img src="/api/placeholder/600/400" alt="Pointless">
+                    <img src="/images/pointless.png" alt="Pointless">
                 </div>
             </div>
+
+            <!-- SNEK Game -->
+            <div class="project project-reverse">
+                <div class="project-content">
+                    <div class="project-tags">
+                        <div class="project-tag">Creative Coding</div>
+                        <div class="project-tag">Game Development</div>
+                        <div class="project-tag">Processing</div>
+                    </div>
+                    <h3>SNEK Game</h3>
+                    <p>Snek Game is a simple but challenging game created using Processing. The goal of the game is to navigate a snake character through increasingly difficult levels with varying obstacles.</p>
+                    <p>The game allows multiple players to play on the same device for an added level of difficulty and competition. There can be a maximum of three snakes – where one is controlled by the WASD keys, one is controlled by the arrow keys, and one is controlled by a Joystick connected to an Arduino.</p>
+                    <p>I believe games should provide the player with tools to create their own challenges and share them with others. To accompany SNEK game, and to help me design levels, I created a level editor which saves levels as files that can be imported and used in the game.</p>
+                </div>
+                <div class="project-image">
+                    <div class="game-ui">
+                        <div class="game-ui-item">
+                            <img src="/images/snek1.png" alt="Game Thumbnails">
+                        </div>
+                        <div class="game-ui-item">
+                            <img src="/images/snek2.png" alt="Game Icons">
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" style="min-height: 50vh;">
+    <!-- <section id="contact" style="min-height: 50vh;">
         <h2>Let's Connect</h2>
         <p>I'm always interested in collaborating on innovative interactive experiences.</p>
         <p>If you'd like to discuss a project or just want to say hello, don't hesitate to reach out!</p>
         <a href="#" class="btn">Contact Me</a>
-    </section>
+    </section> -->
 
     <!-- Footer -->
     <footer>
         <p>&copy; 2025 Oliver Skarupa - Interactive Experience Designer</p>
         <div class="social-links">
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-behance"></i></a>
+            <a href="https://www.linkedin.com/in/oliver-s-a296a62bb/"><i class="fab fa-linkedin"></i></a>
+            <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+            <!-- <a href="#"><i class="fab fa-github"></i></a> -->
+            <!-- <a href="#"><i class="fab fa-behance"></i></a> -->
         </div>
     </footer>
 
     <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('nav a').forEach(anchor => {
+        // Smooth scrolling only for in-page anchor links (href="#...")
+        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
                 window.scrollTo({
-                    top: targetElement.offsetTop - 80,
-                    behavior: 'smooth'
+                top: targetElement.offsetTop - 80,
+                behavior: 'smooth'
                 });
+            }
             });
         });
-        
+
         // Sticky navigation bar with background change
         window.addEventListener('scroll', function() {
             const nav = document.querySelector('nav');
             if (window.scrollY > 50) {
-                nav.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
-                nav.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+            nav.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+            nav.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
             } else {
-                nav.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
-                nav.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+            nav.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+            nav.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
             }
         });
     </script>
