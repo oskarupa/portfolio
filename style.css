@@ -326,6 +326,10 @@ footer {
     .project-reverse {
         flex-direction: column;
     }
+
+    .learning-body {
+        flex-direction: column;
+    }
     
     .manifesto-cards {
         flex-direction: column;
@@ -471,6 +475,33 @@ footer {
     line-height: 30px;
     margin-right: 10px;
     font-weight: bold;
+}
+
+.learning-body {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* text column */
+.learning-text {
+  flex: 1;
+}
+
+/* image container is only as wide as its image */
+.learning-image {
+  flex: 1;
+    border-radius: 10px;
+    max-width: 300px;
+    min-width: 300px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* ensure the image fits and looks nice */
+.learning-image img {
+  width: 100%;
+  display: block;
 }
 
 .future-plans {
