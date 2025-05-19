@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
         //adjust transparency based on speed
         const speed = Math.sqrt(this.vx * this.vx + this.vy * this.vy);
         const maxSpeed = 5;
-        const alpha = Math.min(speed / maxSpeed, 1);
+        const alpha = Math.min(speed / maxSpeed, 0.5);
         this.color  = `rgba(255, 255, 255, ${alpha})`;
     }
 
