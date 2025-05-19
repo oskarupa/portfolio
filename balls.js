@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
       this.y      = Math.random() * (H - 2*this.radius) + this.radius;
       this.vx     = (Math.random() - 0.5) * 4;
       this.vy     = (Math.random() - 0.5) * 4;
-      this.color  = `rgba(255,255,255,0.2)`;
+      this.color  = `rgba(255, 255, 255, 0.2)`;
     }
     draw() {
       ctx.beginPath();
@@ -82,6 +82,12 @@ document.addEventListener('DOMContentLoaded', () => {
         this.vy += ay + ty * tAccel;
         this.vx += (Math.random() - 0.5) * forceJitter;
         this.vy += (Math.random() - 0.5) * forceJitter;
+
+        //adjust transparency based on speed
+        const speed = Math.sqrt(this.vx * this.vx + this.vy * this.vy);
+        const maxSpeed = 5;
+        const alpha = Math.min(speed / maxSpeed, 1);
+        this.color  = `rgba(255, 255, 255, ${alpha})`;
     }
 
       // light damping
