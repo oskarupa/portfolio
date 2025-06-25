@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oliver Skarupa - Competence Development</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <img src="images/title.png" alt="Oliver Skarupa" class="logo" />
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <!-- <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#manifesto">Manifesto</a></li>
+            <li><a href="index.html#projects">Projects</a></li> -->
+            <li><a href="/piv.html">Competence Development</a></li>
+        </ul>
+    </nav>
+
+    <!-- Competence Hero Section -->
+    <section class="hero-competence">
+        <div class="hero-competence-content">
+            <h1>Personal Development Plan</h1>
+            <b>Structured plan for Y3</b>
+        </div>
+    </section>
+
+    <section>
+        <!-- PDP Long-Term Goals -->
+        <div class="future-plans">
+            <h3>KEY LONG-TERM GOALS</h3>
+            <p>These goals were formulated at the start of Year 2 to focus my development and align with my evolving professional identity and vision:</p>
+            <ul>
+                <li><strong>Become confident in Unity for prototyping digital interactions</strong><br>
+                    <em>Status:</em> Done through Game Design 1 & 2, and Games & Play squad project.
+                </li>
+                <li><strong>Explore augmented reality (AR) and virtual reality (VR) as tools for inclusive interaction design</strong><br>
+                    <em>Status:</em> In progress. Implemented in DAF AR; further development planned for Year 3 with focus on non-headset-based interaction.
+                </li>
+                <li><strong>Improve reflection and planning skills through consistent writing and structured goal-setting</strong><br>
+                    <em>Status:</em> Done. Reflections became more natural and personal in Year 2, particularly around User & Society and Collaboration.
+                </li>
+                <li><strong>Develop collaboration skills by becoming a better leader in groups</strong><br>
+                    <em>Status:</em> Partially achieved. Took lead in Game Design courses, but identified areas to improve, such as assertiveness.
+                </li>
+            </ul>
+        </div>
+
+        <!-- Looking Ahead -->
+        <div class="future-plans">
+            <h3>LOOKING AHEAD TO YEAR 3</h3>
+            <p>As I enter Year 3, my main focus is to combine everything I’ve developed so far into a strong, portfolio that reflects who I am as a designer. I want to deepen my ability to merge digital and physical interaction through prototypes that combine physical and digital worlds - using tools like Unity alongside physical sensors, actuators, or haptic interfaces.</p>
+            
+            <p>My PDP for Year 3 includes updated SMART goals that will guide my learning in a more structured way:</p>
+            <ul>
+                <li><strong>By November 2025</strong>, create at least one integrated prototype that uses physical input (e.g. motion, sound, touch) to control a digital system built in Unity.</li>
+                <li><strong>By December 2025</strong>, develop a concept and idea to pursue for my FBP that reflects my design identity and professional goals.</li>
+                <li><strong>Throughout Year 3</strong>, reflect at the end of each quartile on all academic and extracurricular activities to monitor my progress and decide my FBP direction.</li>
+            </ul>
+
+            <p>These goals align with my vision to created interactive experiences. My Final Bachelor Project will be a key moment to bring this all together.</p>
+        </div>
+
+        <!-- Future Plans -->
+        <div class="future-plans">
+            <h3>FBP Plans</h3>
+            <ul>
+                <li>I'm excited for my FBP, an opportunity to put all my effort into a passion project of my choice.</li>
+                <li>I plan on doing my FBP in the Artifice squad, I already have multiple creative ideas that combine interaction design with AI.</li>
+            </ul>
+        </div>
+
+        <div class="back-to-home">
+            <a href="index.html" class="btn">Back to Portfolio</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Oliver Skarupa - Interactive Experience Designer</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/oliver-s-a296a62bb/"><i class="fab fa-linkedin"></i></a>
+            <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+            <!-- <a href="#"><i class="fab fa-github"></i></a> -->
+            <!-- <a href="#"><i class="fab fa-behance"></i></a> -->
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                if (this.getAttribute('href').includes('#')) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').split('#')[1];
+                    if (targetId) {
+                        const targetElement = document.getElementById(targetId);
+                        if (targetElement) {
+                            window.scrollTo({
+                                top: targetElement.offsetTop - 80,
+                                behavior: 'smooth'
+                            });
+                        }
+                    }
+                }
+            });
+        });
+        
+        // Sticky navigation bar with background change
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+                nav.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+            } else {
+                nav.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+                nav.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+            }
+        });
+    </script>
+</body>
+</html>
